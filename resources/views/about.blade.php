@@ -29,6 +29,8 @@
         <a href="/about">about</a>
         <a href="/package">package</a>
         <a href="/book">book</a>
+        <a href="{{route('register.form')}}">Register</a>
+        <a href="{{route('login.form')}}">Login</a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>

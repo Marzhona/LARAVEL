@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class TopDestination extends Model
 {
     use HasFactory;
+    protected $fillable=['title','description','url'];
+
 }
