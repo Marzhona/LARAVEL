@@ -58,8 +58,9 @@
             <div class="content">
                 <h3>{{$destin->title}}</h3>
                 <p>{{$destin->description}}</p>
-                <a href="{{route('package.show',$destin->id)}}"class="btn btn-primary">Read more</a>
+                <a href="{{route('package.edit', ['package' => $destin->id])}}"class="btn btn-primary">Edit</a>
                 <a href="{{route('package.delete',['destination' => $destin->id])}}"class="btn btn-primary">Delete</a>
+
 {{--                <form action="{{route('package.destroy',$destin->id)}}" method="post">--}}
 {{--                    @csrf--}}
 {{--                    @method('DELETE')--}}

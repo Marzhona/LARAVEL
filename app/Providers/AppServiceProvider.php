@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Http\Controllers\API\PackageController;
+use App\Services\ImpI\PackageServiceImpI;
+use App\Services\PackageService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(PackageService::class,PackageServiceImpI::class);
     }
 
     /**

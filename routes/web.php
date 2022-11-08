@@ -32,22 +32,3 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('upload', [UploadController::class, 'upload']);
 
 
-//Route::get('/package', [PackageController::class, 'package'])->name('package');
-//Route::get('/create', [PackageController::class, 'create'])->name('create');
-//Route::get('/package/{package}',[PackageController::class, 'show'])->name('show');
-//Route::post('/package',[PackageController::class, 'store'])->name('store');
-
-
-//Route::get('/',function(){
-//    return redirect()->route('package');
-//});
-//Route::resource('package',PackageController::class);
-
-//Route::get('/', function (){
-//return redirect()->route('posts.index');
-//});
-//Route::get('/posts',[\App\Http\Controllers\PostController::class,'index'])->name('posts.index');
-//Route::get('/posts/create',[\App\Http\Controllers\PostController::class,'create'])->name('posts.create');
-
-
-//Route::get('create',[\App\Http\Controllers\HomeController::class,'create'])->name('create');

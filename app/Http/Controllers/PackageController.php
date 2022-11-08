@@ -38,15 +38,15 @@ class PackageController extends Controller
 
     public function show($destination)
     {
-        return view('show', ['destination' => $destination]);
+        return view('show', ['destin' => $destination]);
     }
 
-    public function edit(TopDestination $destination)
+    public function edit(TopDestination $package)
     {
-        return view('edit', ['destination' => $destination]);
+        return view('edit', ['destin' => $package]);
     }
 
-    public function update(Request $request, destination $destination)
+    public function update(Request $request, TopDestination $destination)
     {
 
         $destination->update([
