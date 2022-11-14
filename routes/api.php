@@ -19,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/package',[\App\Http\Controllers\API\PackageController::class, 'index']);
+Route::post('/edit/{destination}',[\App\Http\Controllers\API\PackageController::class, 'edit']);
+
+Route::post('/create',[\App\Http\Controllers\API\PackageController::class, 'create']);
+Route::delete('/destroy/{destination}',[\App\Http\Controllers\API\PackageController::class, 'destroy']);
