@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\PackageResource;
 use App\Models\TopDestination;
 use App\Services\CreateService;
 use App\Services\EditService;
@@ -34,7 +35,7 @@ class PackageController extends Controller
 
             return response()->json([
                 'status' => true,
-                'package' => $package
+                'package' => PackageResource::collection($package)
             ]);
         } catch (\Exception $e){
             return response()->json([
